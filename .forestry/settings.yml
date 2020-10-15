@@ -4,6 +4,13 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: directory
+  path: content/quotes
+  label: Quotes
+  create: all
+  match: "**/*"
+  templates:
+  - quote
 - type: heading
   label: Content
 - type: directory
