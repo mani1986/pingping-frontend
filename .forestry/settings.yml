@@ -4,6 +4,8 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
+- type: heading
+  label: Content
 - type: directory
   path: content/quotes
   label: Quotes
@@ -11,15 +13,13 @@ sections:
   match: "**/*"
   templates:
   - quote
-- type: heading
-  label: Content
 - type: directory
-  path: content/principles
+  path: content/principes
   label: Principes
   create: documents
   match: "**/*"
   templates:
-  - blog-post
+  - principe
 - type: heading
   label: Config
 upload_dir: static
