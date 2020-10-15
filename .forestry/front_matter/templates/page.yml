@@ -1,4 +1,20 @@
 ---
 label: Page
 hide_body: true
-fields: []
+fields:
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: subtitle
+  type: text
+  config:
+    required: false
+  label: Subtitle
+- name: download_now_label
+  type: text
+  config:
+    required: false
+  label: Download Now Label
+  description: Label shown in the download now block
